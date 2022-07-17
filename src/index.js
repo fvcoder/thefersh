@@ -4,7 +4,7 @@ const path = require('path')
 const parser = new Parser()
 
 const getArticlesFromBlog = () =>
-  parser.parseURL('https://thefersh.com/feed.rss')
+  parser.parseURL('https://thefersh.com/api/feed')
 
 
 async function main() {
