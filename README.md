@@ -3,11 +3,11 @@
 
 
 
-- 🔭 I’m currently working on [Loproda](https://loproda.com)
+- 🔭 I’m currently working on [Me](https://fvcoder.com)
 
 - 🌱 I’m currently learning **React, Remix Js, Typescript**
 
-- 📝 I regularly write articles on [https://thefersh.com](https://thefersh.com)
+- 📝 I regularly write articles on [https://fvcoder.com](https://fvcoder.com)
 
 - 💬 Ask me about **Remix Js and Next Js**
 
@@ -28,6 +28,6 @@
 - [Cómo elegir el formato de tus imágenes para la web. + casos de uso](https://www.thefersh.com/blog/como-elegir-el-formato-de-tus-imagenes-para-la-web/)
 - [Anatomía de una etiqueta de HTML](https://www.thefersh.com/blog/html-anatomia-de-una-etiqueta-html/)
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=thefersh&show_icons=true&locale=en&layout=compact" alt="thefersh" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=fvcoder&show_icons=true&locale=en&layout=compact" alt="thefersh" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=thefersh&show_icons=true&locale=en" alt="thefersh" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=fvcoder&show_icons=true&locale=en" alt="thefersh" /></p>
