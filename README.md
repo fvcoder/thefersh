@@ -1,28 +1,47 @@
+![Fernando Ticona](https://user-images.githubusercontent.com/46249834/203090648-ec9eb622-2a2b-41f4-8603-95dcf4a8548a.png)
+
+
 <h1 align="center">Hi 👋, I'm Fernando Ticona</h1>
-<h3 align="center">Soy un programador web Frontend en constante aprendizaje</h3>
+<p align="center">
+    Frontend software developer, I have taken courses at Platzi, I know technologies like HTML, CSS, Java Script, React, Next js 🔥.
+    <br />
+    Also, I am a content creator in upcoming social networks 🤗.
+</p>
 
-
-- 🔭 Ready to team up
-
-- 🌱 I’m currently learning **React, Remix Js, Typescript**
-
-- 📝 I write articles about everything I learn on [fvcoder.com](https://fvcoder.com)
-
-- 💬 I prioritize the user experience
-
-- 📫 How to reach me **fer@thefersh.com**
-
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+<p align="center">
+    <a href="https://www.tiktok.com/@fvcoder">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=TikTok&color=000000&logo=TikTok&logoColor=FFFFFF&label=" alt="tiktok"  />
+    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com/fvcoder1">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Twitter&color=1DA1F2&logo=Twitter&logoColor=FFFFFF&label=" />
+    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/fvcoder">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=LinkedIn&color=0A66C2&logo=LinkedIn&logoColor=FFFFFF&label=" />
+    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="mailto:contact@fvcoder.com?subject=Hola%20Fernando">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Gmail&color=EA4335&logo=Gmail&logoColor=FFFFFF&label=" />
     </a>
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=fvcoder&show_icons=true&locale=en&layout=compact" alt="thefersh" /></p>
+<hr />
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=fvcoder&show_icons=true&locale=en" alt="thefersh" /></p>
+<h4>My Development Toolbelt</h4>
+<p align='center'>
+  <img src="https://img.shields.io/badge/html5%20-%23e34f26.svg?&style=for-the-badge&logo=html5&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/javascript%20-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/react%20-%2361DAFB.svg?&style=for-the-badge&logo=react&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/git%20-%23F05133.svg?&style=for-the-badge&logo=git&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/mysql%20-%23016B93.svg?&style=for-the-badge&logo=mysql&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/linux%20-%23000.svg?&style=for-the-badge&logo=linux&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/github%20-%23000.svg?&style=for-the-badge&logo=github&logoColor=white" />&nbsp;&nbsp;
+</p>
+
+<hr />
+
+
+<h4>🚀&nbsp;&nbsp;&nbsp;My Projects</h4>
+
+<h5><a href="https://fvcoder.com">💻 Fvcoder.com</a></h5>
+<p>Blog, portfolio and personal website<br>
+<a href="https://github.com/fvcoder/fvcoder.com">Repository here</a></p>
