@@ -1,29 +1,47 @@
+![Fernando Ticona](https://user-images.githubusercontent.com/46249834/203090648-ec9eb622-2a2b-41f4-8603-95dcf4a8548a.png)
+
+
 <h1 align="center">Hi 👋, I'm Fernando Ticona</h1>
-<h3 align="center">A passionate frontend developer from Bolivia</h3>
-
-
-
-- 🔭 I’m currently working on [Loproda](https://loproda.com)
-
-- 🌱 I’m currently learning **React, Remix Js, Typescript**
-
-- 📝 I regularly write articles on [https://thefersh.com](https://thefersh.com)
-
-- 💬 Ask me about **Remix Js and Next Js**
-
-- 📫 How to reach me **fer@thefersh.com**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/thefersh24" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="thefersh24" height="30" width="40" /></a>
+<p align="center">
+    Frontend software developer, I have taken courses at Platzi, I know technologies like HTML, CSS, Java Script, React, Next js 🔥.
+    <br />
+    Also, I am a content creator in upcoming social networks 🤗.
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
+<p align="center">
+    <a href="https://www.tiktok.com/@fvcoder">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=TikTok&color=000000&logo=TikTok&logoColor=FFFFFF&label=" alt="tiktok"  />
+    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com/fvcoder1">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Twitter&color=1DA1F2&logo=Twitter&logoColor=FFFFFF&label=" />
+    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/fvcoder">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=LinkedIn&color=0A66C2&logo=LinkedIn&logoColor=FFFFFF&label=" />
+    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="mailto:contact@fvcoder.com?subject=Hola%20Fernando">
+        <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Gmail&color=EA4335&logo=Gmail&logoColor=FFFFFF&label=" />
+    </a>
+</p>
 
-### Blog
+<hr />
+
+<h2>My Development Toolbelt</h2>
+<p align='center'>
+  <img src="https://img.shields.io/badge/html5%20-%23e34f26.svg?&style=for-the-badge&logo=html5&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/javascript%20-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/react%20-%2361DAFB.svg?&style=for-the-badge&logo=react&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/git%20-%23F05133.svg?&style=for-the-badge&logo=git&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/mysql%20-%23016B93.svg?&style=for-the-badge&logo=mysql&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/linux%20-%23000.svg?&style=for-the-badge&logo=linux&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/github%20-%23000.svg?&style=for-the-badge&logo=github&logoColor=white" />&nbsp;&nbsp;
+</p>
+
+<h2>Projects</h2>
+
+%{{latest_project}}%
+
+
+<h2>Blog</h2>
+
 %{{latest_articles}}%
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=thefersh&show_icons=true&locale=en&layout=compact" alt="thefersh" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=thefersh&show_icons=true&locale=en" alt="thefersh" /></p>

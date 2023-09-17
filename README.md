@@ -25,7 +25,7 @@
 
 <hr />
 
-<h4>My Development Toolbelt</h4>
+<h2>My Development Toolbelt</h2>
 <p align='center'>
   <img src="https://img.shields.io/badge/html5%20-%23e34f26.svg?&style=for-the-badge&logo=html5&logoColor=white" />&nbsp;&nbsp;
   <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />&nbsp;&nbsp;
@@ -37,11 +37,17 @@
   <img src="https://img.shields.io/badge/github%20-%23000.svg?&style=for-the-badge&logo=github&logoColor=white" />&nbsp;&nbsp;
 </p>
 
-<hr />
+<h2>Projects</h2>
+
+- [Xiara Studios - Landing Page Interactiva: Explora el sitio a través de un Mini Videojuego](https://fvcoder.com/project/xiara-studios-landing-page-interactiva-explora-el-sitio-a-traves-de-un-mini-videojuego)
+- [Mindfulness One - Blog de meditación y crecimiento personal](https://fvcoder.com/project/mindfulness-one-blog-de-meditacion-y-crecimiento-personal)
+- [fvcoder.com: Pagina Oficial de Fernando Ticona | Full-Stack Dev Junior](https://fvcoder.com/project/fvcoder)
 
 
-<h4>🚀&nbsp;&nbsp;&nbsp;My Projects</h4>
+<h2>Blog</h2>
 
-<h5><a href="https://fvcoder.com">💻 Fvcoder.com</a></h5>
-<p>Blog, portfolio and personal website<br>
-<a href="https://github.com/fvcoder/fvcoder.com">Repository here</a></p>
+- [Aprendizaje Eficaz: Claves para Vencer Obstáculos y Estudiar con Éxito](https://fvcoder.com/blog/aprendizaje-eficaz-claves-para-vencer-obstaculos-y-estudiar-con-exito)
+- [SEO: Optimización para Motores de Búsqueda y Posicionamiento Web Efectivo](https://fvcoder.com/blog/seo-optimizacion-motores-busqueda)
+- [Discord, el mejor sistema de mensajería](https://fvcoder.com/blog/discord)
+- [Notion, el mejor sistema que uso para organizar mis proyectos](https://fvcoder.com/blog/notion)
+- [¿Por que uso figma?](https://fvcoder.com/blog/figma)

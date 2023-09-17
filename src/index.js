@@ -3,20 +3,28 @@ const fs = require('fs')
 const path = require('path')
 const parser = new Parser()
 
-const getArticlesFromBlog = () =>
-  parser.parseURL('https://thefersh.com/api/feed')
+const getFeed = (url) =>
+  parser.parseURL(url)
 
 
 async function main() {
-    const article = await getArticlesFromBlog()
+    const blog = await getFeed('https://fvcoder.com/blog/feed')
+    const project = await getFeed('https://fvcoder.com/project/feed')
+    
     const template = fs.readFileSync(path.join(__dirname, 'README.md.tpl')).toString()
+    
+    const lastArticles = blog.items.slice(0, 5)
+        .map(({ title, guid }) => `- [${title}](${guid})`)
+        .join('\n')
 
-    const lastArticles = article.items.slice(0, 5)
-        .map(({ title, link }) => `- [${title}](${link})`)
+    const lastProject = project.items.slice(0, 5)
+        .map(({ title, guid }) => `- [${title}](${guid})`)
         .join('\n')
 
    
-   const readme = template.replace('%{{latest_articles}}%', lastArticles)
+   const readme = template
+    .replace('%{{latest_articles}}%', lastArticles)
+    .replace('%{{latest_project}}%', lastProject)
 
    fs.writeFileSync(path.join(__dirname, '../README.md'), readme)
 }
