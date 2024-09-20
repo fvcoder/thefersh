@@ -1,0 +1,42 @@
+---
+import { DropToDown } from "../../ui/component/droptodown";
+import { Icon } from "@iconify-icon/react"
+import { NavbarMenu } from "./navbar.menu";
+---
+
+<header class="relative w-full py-4 bg-white border-b border-gray-200/60">
+    <div class="flex items-center justify-between w-full max-w-5xl mx-auto px-6">
+        <a href="/">
+            <span class="text-base font-semibold">Fernando Ticona</span>
+        </a>
+        <nav class="hidden md:block">
+            <ul class="flex items-center gap-x-4">
+                <li>
+                    <a href="" class="text-sm font-light transition-colors px-2 text-gray-500 hover:text-gray-900 active:text-purple-500 pb-[1px]">Blog</a>
+                </li>
+                <li>
+                    <a href="" class="text-sm font-light transition-colors px-2 text-gray-500 hover:text-gray-900 active:text-purple-500 pb-[1px]">About</a>
+                </li>
+                <li class="-ml-1">
+                    <DropToDown label="Work" items={[{ label: "Portfolio", href: "/portfolio"}, { label: "Experiments", href: "/experiments"}]} client:load />
+                </li>
+                <li class="-mb-1.5">
+                    <a href="https://x.com/fvcoder1" class="inline-block" target="_blank" rel="noopener noreferrer">
+                        <Icon icon="hugeicons:new-twitter" width={20} className="text-gray-500 hover:text-gray-600 active:text-gray-700 focus:text-gray-600" />
+                    </a>
+                </li>
+                <li class="-mb-1.5">
+                    <a href="https://github.com/fvcoder" class="inline-block" target="_blank" rel="noopener noreferrer">
+                        <Icon icon="mdi:github" width={20} className="text-gray-500 hover:text-gray-600 active:text-gray-700 focus:text-gray-600" />
+                    </a>
+                </li>
+                <li class="-mb-1.5">
+                    <a href="https://www.linkedin.com/in/fvcoder" class="inline-block" target="_blank" rel="noopener noreferrer">
+                        <Icon icon="mdi:linkedin" width={20} className="text-gray-500 hover:text-gray-600 active:text-gray-700 focus:text-gray-600" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <NavbarMenu client:load />
+    </div>
+</header>

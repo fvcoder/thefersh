@@ -1,0 +1,36 @@
+---
+import Navbar from "./../component/Navbar.astro"
+
+interface Props {
+    title?: string
+    description?: string
+}
+
+const title = Astro.props.title ? `${Astro.props.title} | Fernando Ticona` : "Fernando Ticona"
+
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={Astro.props.description ?? ""}>
+
+    <link rel="canonical" href={`https://fvcoder.com${Astro.url.pathname}`} />
+
+    <meta property="og:site_name" content="Fernando Ticona">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={Astro.props.description ?? ""}>
+
+    <meta name="theme-color" content="#FFFFFF">
+</head>
+<body class="relative">
+    <div class="relative">
+        <Navbar />
+    </div>
+    {Astro.url}
+    <slot />
+</body>
+</html>
