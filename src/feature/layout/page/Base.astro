@@ -1,4 +1,5 @@
 ---
+import Footer from "../component/Footer.astro"
 import Navbar from "./../component/Navbar.astro"
 
 interface Props {
@@ -30,7 +31,9 @@ const title = Astro.props.title ? `${Astro.props.title} | Fernando Ticona` : "Fe
     <div class="relative">
         <Navbar />
     </div>
-    {Astro.url}
     <slot />
+    <div>
+        <Footer />
+    </div>
 </body>
 </html>
