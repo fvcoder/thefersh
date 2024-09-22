@@ -1,0 +1,14 @@
+---
+import { Icon } from '@iconify-icon/react'
+
+interface Props {
+    href: string
+    title: string
+}
+---
+<a href={Astro.props.href}>
+    <h2 class="mt-12 md:mt-24 group text-3xl font-bold transition-colors hover:text-purple-500">
+        <span>{Astro.props.title}</span>
+        <Icon icon="fluent:arrow-up-right-20-filled" width={14} className="group-hover:-translate-y-2 transition-transform" />
+    </h2>
+</a>
