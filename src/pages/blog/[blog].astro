@@ -5,7 +5,8 @@ import { Icon } from "@iconify-icon/react";
 
 <Layout>
     <header class="relative w-full py-6 md:py-10">
-        <div class="max-w-4xl mx-auto px-6">
+        <div class="absolute inset-0 top-0 mask-header"></div>
+        <div class="max-w-4xl mx-auto px-6 relative">
             <h1 class="text-4xl font-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h1>
         </div>
     </header>
@@ -57,3 +58,10 @@ import { Icon } from "@iconify-icon/react";
         </article>
     </main>
 </Layout>
+
+<style>
+    .mask-header {
+        background: linear-gradient(90deg, rgba(255, 0, 0, 0.05) 0%, rgba(255, 0, 241, 0.05) 25%, rgba(0, 194, 255, 0.05) 50%, rgba(104, 255, 0, 0.05) 82%, rgba(223, 255, 0, 0.05) 100%);
+        mask-image: radial-gradient(ellipse 50% 75% at 50% 0%,#000 75%,transparent 100%)
+    }
+</style>
