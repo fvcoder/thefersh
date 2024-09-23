@@ -12,13 +12,13 @@ import { NavbarMenu } from "./navbar.menu";
         <nav class="hidden md:block">
             <ul class="flex items-center gap-x-4">
                 <li>
-                    <a href="" class="text-sm font-light transition-colors px-2 text-gray-500 hover:text-gray-900 active:text-purple-500 pb-[1px]">Blog</a>
+                    <a href="/blog" class="text-sm font-light transition-colors px-2 text-gray-500 hover:text-gray-900 active:text-purple-500 pb-[1px]">Blog</a>
                 </li>
                 <li>
-                    <a href="" class="text-sm font-light transition-colors px-2 text-gray-500 hover:text-gray-900 active:text-purple-500 pb-[1px]">About</a>
+                    <a href="/about" class="text-sm font-light transition-colors px-2 text-gray-500 hover:text-gray-900 active:text-purple-500 pb-[1px]">About</a>
                 </li>
                 <li class="-ml-1">
-                    <DropToDown label="Work" items={[{ label: "Portfolio", href: "/portfolio"}, { label: "Experiments", href: "/experiments"}]} client:load />
+                    <DropToDown label="Work" items={[{ label: "Portfolio", href: "/portfolio"}, { label: "Experiments", href: "/experiment"}]} client:load />
                 </li>
                 <li class="-mb-1.5">
                     <a href="https://x.com/fvcoder1" class="inline-block" target="_blank" rel="noopener noreferrer">

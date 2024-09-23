@@ -6,7 +6,7 @@ import { Icon } from '@iconify-icon/react';
 export function NavbarMenu() {
     const [open, setOpen] = useState(false);
     return (
-        <Dialog.Root onOpenChange={setOpen} open={open}>
+        <Dialog.Root onOpenChange={setOpen} open={open}  aria-label='Menu'>
             <Dialog.Trigger asChild>
                 <button className="md:hidden text-gray-500 active:text-gray-800 text-sm px-2">Menu</button>
             </Dialog.Trigger>

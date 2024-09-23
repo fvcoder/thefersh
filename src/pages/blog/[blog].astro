@@ -1,0 +1,59 @@
+---
+import Layout from "./../../feature/layout/page/Base.astro";
+import { Icon } from "@iconify-icon/react";
+---
+
+<Layout>
+    <header class="relative w-full py-6 md:py-10">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl font-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h1>
+        </div>
+    </header>
+    <main class="w-full max-w-4xl mx-auto px-6 pb-20 flex flex-col md:flex-row items-start gap-6">
+        <div class="md:w-1/4 flex flex-col gap-4">
+            <a href="https://linkedin.com/in/fvcoder" class="flex items-center gap-2 mt-4 md:mt-0 rounded-md">
+                <span class="flex-none">
+                    <img src="https://github.com/fvcoder.png" alt="Fernando Ticona" class="w-10 rounded-full" />
+                </span>
+                <span>
+                    <span class="mb-0">Fernando Ticona</span>
+                    <span class="text-xs text-gray-500 -mt-0.5 block">Web/Mobile Developer</span>
+                </span>
+            </a>
+            <hr class="hidden md:block" />
+            <div class="hidden md:block">
+                <p class="text-gray-500 text-sm">Share this article on:</p>
+                <div class="flex gap-2 mt-2">
+                    <a href={`https://www.facebook.com/sharer/sharer.php?u=https://fvcoder.com/blog/${Astro.params.blog}`} target="_blank" rel="noopener noreferrer">
+                        <Icon icon="logos:facebook" width={24} height={24} />
+                    </a>
+                    <a href={`https://twitter.com/intent/tweet?url=https://fvcoder.com/blog/${Astro.params.blog}`} target="_blank" rel="noopener noreferrer">
+                        <Icon icon="logos:twitter" width={24} height={24} />
+                    </a>
+                    <a href={`https://www.linkedin.com/sharing/share-offsite/?url=https://fvcoder.com/blog/${Astro.params.blog}`} target="_blank" rel="noopener noreferrer">
+                        <Icon icon="skill-icons:linkedin" width={24} height={24} />
+                    </a>
+                    <a href={`https://api.whatsapp.com/send?text=https://fvcoder.com/blog/${Astro.params.blog}`} target="_blank" rel="noopener noreferrer">
+                        <Icon icon="logos:whatsapp-icon" width={24} height={24} />
+                    </a>
+                    <a href={`mailto:?subject=https://fvcoder.com/blog/slug&body=https://fvcoder.com/blog/${Astro.params.blog}`} target="_blank" rel="noopener noreferrer">
+                        <Icon icon="material-symbols:mail" width={24} height={24} className="text-gray-500" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <article class="md:w-3/4 prose prose-img:rounded-lg prose-img:w-full prose-img:h-auto prose-img:mx-auto prose-h1:font-semibold max-w-full">
+            <img src="https://www.arielcerda.com/img/containers/assets/blog-2.png/66e0e3e053a8a4b3f073249f0ac496ae.webp" alt="">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h5>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta natus quia aperiam fugiat dolor, nihil est omnis. Earum ullam omnis aperiam magnam porro natus doloremque quo, quae repellendus odio!</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquid natus ut fugit cupiditate neque necessitatibus a debitis alias repellat quod dolor blanditiis. Quos dolorum sed cupiditate dolore delectus. Ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquid natus ut fugit cupiditate neque necessitatibus a debitis alias repellat quod dolor blanditiis. Quos dolorum sed cupiditate dolore delectus. Ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquid natus ut fugit cupiditate neque necessitatibus a debitis alias repellat quod dolor blanditiis. Quos dolorum sed cupiditate dolore delectus. Ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquid natus ut fugit cupiditate neque necessitatibus a debitis alias repellat quod dolor blanditiis. Quos dolorum sed cupiditate dolore delectus. Ratione.</p>
+        </article>
+    </main>
+</Layout>

@@ -1,0 +1,48 @@
+---
+import Layout from "./../feature/layout/page/Base.astro"
+
+const labelClassName = "block mb-2 text-sm font-medium text-gray-900"
+const inputClassName = "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5"
+---
+<Layout>
+    <main class="w-full max-w-3xl mx-auto py-10 px-6">
+        <h1 class="text-3xl sm:text-5xl font-bold mb-4">Start a project</h1>
+        <p class="text-lg text-gray-500">Tell me what your needs are, I will help you in each phase of the project.</p>
+        <form class="mt-6 grid grid-cols-2 gap-x-6 gap-y-2">
+            <div class="mb-5 col-span-2">
+                <label for="sName" class={labelClassName}>Name</label>
+                <input type="email" id="sName" class={inputClassName} placeholder="Jhon Doe" required />
+            </div>
+            <div class="mb-5 col-span-2">
+                <label for="sEmail" class={labelClassName}>Email</label>
+                <input type="email" id="sEmail" class={inputClassName} placeholder="Jhon Doe" required />
+            </div>
+            <div class="mb-5">
+                <label for="sType" class={labelClassName}>Type of project</label>
+                <select id="sType" class={inputClassName} required >
+                    <option value="m">Mobile App</option>
+                    <option value="w">Web</option>
+                    <option value="wm">Mobile App and Web</option>
+                    <option value="d">Design</option>
+                </select>
+            </div>
+            <div class="mb-5">
+                <label for="sBudget" class={labelClassName}>Budget</label>
+                <select id="sBudget" class={inputClassName} required >
+                    <option value="1">$1000 - $5000</option>
+                    <option value="2">$5000 - $10000</option>
+                    <option value="3">$10000+</option>
+                </select>
+            </div>
+            <div class="mb-5 col-span-2">
+                <label for="sEmail" class={labelClassName}>Additional details</label>
+                <textarea id="sEmail" class={inputClassName + " min-h-28"} required />
+            </div>
+            
+            <div class="col-span-2">
+                <button class="mx-auto px-4 py-2 border select-none rounded-md border-purple-300 bg-purple-400 text-white text-sm flex items-center gap-2 transition-colors hover:bg-purple-500 active:bg-purple-600">Submit</button>
+            </div>
+
+        </form>
+    </main>
+</Layout>

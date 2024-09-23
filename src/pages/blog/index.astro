@@ -1,0 +1,81 @@
+---
+import BlogTimelineItem from "../../feature/ui/component/BlogTimelineItem.astro";
+import Layout from "./../../feature/layout/page/Base.astro";
+---
+
+<Layout>
+    <div class="relative">
+        <div class="hidden md:block absolute inset-x-12 inset-y-0 -z-10 bg-[linear-gradient(to_right,#9AA3B02e_1px,transparent_1px),linear-gradient(to_bottom,#9AA3B02e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+        <section class="w-full max-w-5xl mx-auto px-6 py-10 grid gird-cols-1 md:grid-cols-2 md:grid-rows-3 gap-x-6 gap-y-4">
+            
+            <article class="relative md:row-span-3 transition hover:bg-gray-100 active:bg-gray-50 p-4 rounded-lg">
+                <time class="text-base text-gray-500" datetime="">Julio 7, 2024</time>
+                <h2 class="mt-2">
+                    <a href="/blog/slug">
+                        <span class="absolute inset-0 rounded-lg"></span>
+                        <span class="line-clamp-2 text-3xl font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ullam officiis iusto facilis doloremque laborum asperiores alias, praesentium tenetur cumque quae quo eum voluptates magni recusandae? Tempora nobis numquam nemo?</span>
+                    </a>
+                </h2>
+                <div class="my-4">
+                    <img
+                        class="w-full aspect-video object-cover rounded-lg"
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"                        
+                        alt=""
+                    />
+                </div>
+                <p class="line-clamp-3 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi praesentium, minima veniam repellendus explicabo ipsam voluptatum ut numquam voluptates ad facilis qui non reprehenderit debitis voluptate rerum. Beatae, saepe.</p>
+                <div class="mt-4 text-purple-500">Read more</div>
+            </article>
+
+            <article class="row-span-1 relative transition hover:bg-gray-100 active:bg-gray-50 p-4 rounded-lg">
+                <time class="text-base text-gray-500" datetime="">Julio 7, 2024</time>
+                <h2 class="mt-2 mb-2">
+                    <a href="/blog/slug">
+                        <span class="absolute inset-0 rounded-lg"></span>
+                        <span class="line-clamp-1 text-lg font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ullam officiis iusto facilis doloremque laborum asperiores alias, praesentium tenetur cumque quae quo eum voluptates magni recusandae? Tempora nobis numquam nemo?</span>
+                    </a>
+                </h2>
+                <p class="line-clamp-2 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi praesentium, minima veniam repellendus explicabo ipsam voluptatum ut numquam voluptates ad facilis qui non reprehenderit debitis voluptate rerum. Beatae, saepe.</p>
+                <div class="mt-4 text-purple-500">Read more</div>
+            </article>
+
+            <article class="row-span-1 relative transition hover:bg-gray-100 active:bg-gray-50 p-4 rounded-lg">
+                <time class="text-base text-gray-500" datetime="">Julio 7, 2024</time>
+                <h2 class="mt-2 mb-2">
+                    <a href="/blog/slug">
+                        <span class="absolute inset-0 rounded-lg"></span>
+                        <span class="line-clamp-1 text-lg font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ullam officiis iusto facilis doloremque laborum asperiores alias, praesentium tenetur cumque quae quo eum voluptates magni recusandae? Tempora nobis numquam nemo?</span>
+                    </a>
+                </h2>
+                <p class="line-clamp-2 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi praesentium, minima veniam repellendus explicabo ipsam voluptatum ut numquam voluptates ad facilis qui non reprehenderit debitis voluptate rerum. Beatae, saepe.</p>
+                <div class="mt-4 text-purple-500">Read more</div>
+            </article>
+            
+            <article class="row-span-1 relative transition hover:bg-gray-100 active:bg-gray-50 p-4 rounded-lg">
+                <time class="text-base text-gray-500" datetime="">Julio 7, 2024</time>
+                <h2 class="mt-2 mb-2">
+                    <a href="/blog/slug">
+                        <span class="absolute inset-0 rounded-lg"></span>
+                        <span class="line-clamp-1 text-lg font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ullam officiis iusto facilis doloremque laborum asperiores alias, praesentium tenetur cumque quae quo eum voluptates magni recusandae? Tempora nobis numquam nemo?</span>
+                    </a>
+                </h2>
+                <p class="line-clamp-2 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi praesentium, minima veniam repellendus explicabo ipsam voluptatum ut numquam voluptates ad facilis qui non reprehenderit debitis voluptate rerum. Beatae, saepe.</p>
+                <div class="mt-4 text-purple-500">Read more</div>
+            </article>
+
+
+        </section>
+    </div>
+    <main class="w-full max-w-4xl mx-auto px-6 pb-20">
+        <section>
+			<BlogTimelineItem />
+			<BlogTimelineItem />
+			<BlogTimelineItem />
+			<BlogTimelineItem />
+			<BlogTimelineItem />
+			<BlogTimelineItem />
+			<BlogTimelineItem />
+			<BlogTimelineItem />
+        </section>
+    </main>
+</Layout>

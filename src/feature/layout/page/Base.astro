@@ -3,6 +3,7 @@ import Footer from "../component/Footer.astro"
 import Navbar from "./../component/Navbar.astro"
 
 interface Props {
+    lang?: string
     title?: string
     description?: string
 }
@@ -11,7 +12,7 @@ const title = Astro.props.title ? `${Astro.props.title} | Fernando Ticona` : "Fe
 
 ---
 <!DOCTYPE html>
-<html lang="es">
+<html lang={Astro.props.lang ?? "en"}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

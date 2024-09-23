@@ -27,7 +27,8 @@
     "wrangler": "^3.78.7"
   },
   "devDependencies": {
-    "@iconify-icon/react": "^2.1.0"
+    "@iconify-icon/react": "^2.1.0",
+    "@tailwindcss/typography": "^0.5.15"
   },
   "packageManager": "yarn@4.5.0"
 }
