@@ -1,1 +1,68 @@
-portfolio
+---
+import { Icon } from "@iconify-icon/react";
+import Brands from "../feature/ui/component/Brands.astro";
+import Layout from "./../feature/layout/page/Base.astro";
+import Project from "../feature/ui/component/Project.astro";
+
+
+const projects = [
+    {
+        name: "Panel de control",
+        brand: "Trujillo",
+        role: "Front-end Developer",
+        feactures: [
+            "Actualizacion de datos en tiempo real",
+            "Mapa interactivo",
+            "Visualizacion de datos Rapida",
+            "Informacion de horarios laborales por colores",
+            "Detalles de responsabilidades de cada usuario",
+            "Detalles de sucursales",
+            "Busqueda Rapida de usuarios",
+            "Filtro de Busqueda por regiones y roles"
+        ],
+        problem: "Encontrar los vigilantes y supervisores de la empresa de manera visual, identificando la ubicacion actual, el control de horarios laborales y en tiempo real.",
+        solution: "Un mapa interactivo que permite a los usuarios localizar a los vigilantes y supervisores de la empresa, así como el control de horarios laborales por colores y facilitando la comunicacion.",
+        screenshots: [
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-1.webp", alt: "Captura de pantalla del panel de control de Trujillo 1" },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-2.webp", alt: "Captura de pantalla del panel de control de Trujillo 2" },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-3.webp", alt: "Captura de pantalla del panel de control de Trujillo 3" },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-4.webp", alt: "Captura de pantalla del panel de control de Trujillo 4" },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-5.webp", alt: "Captura de pantalla del panel de control de Trujillo 5" },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-6.webp", alt: "Captura de pantalla del panel de control de Trujillo 6" },
+        ],
+    }
+]
+---
+<Layout>
+    <header class="relative">
+        <div class="hidden md:block absolute inset-x-12 inset-y-0 -z-10 bg-[linear-gradient(to_right,#9AA3B02e_1px,transparent_1px),linear-gradient(to_bottom,#9AA3B02e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+        <div class="max-w-4xl mx-auto px-6 relative py-5 md:pt-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div>
+                    <h1 class="text-4xl font-bold">Fernando Ticona</h1>
+                    <p class="text-lg mt-1 text-purple-600 font-semibold">Mobile Developer / Front-end developer</p>
+                    <br>
+                    <p>Driven by my passion for technology, I am always looking for new and creative approaches to improve user experiences with fresh and thoughtful solutions.</p>
+                    <br>
+                    <div>
+                        <a href="/start-a-project" class="w-fit px-4 py-2 border select-none rounded-md border-purple-300 bg-purple-400 text-white text-sm flex items-center gap-2 transition-colors hover:bg-purple-500 active:bg-purple-600">
+                            <span>Start a Project</span>
+                            <Icon icon="fluent:arrow-right-28-filled" width={16} />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center order-2">
+                    <img src="https://github.com/fvcoder.png" alt="Fernando Ticona" class="w-14 md:w-52 rounded-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+	<Brands />
+    <main class="px-6 pb-20 mt-10">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <hr>
+        </div>
+        { projects.map((project) => <Project {...project} />) }
+    </main>
+</Layout>

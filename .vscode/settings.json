@@ -3,6 +3,7 @@
         "astrojs",
         "cloudflare",
         "hugeicons",
-        "iconify"
+        "iconify",
+        "photoswipe"
     ]
 }

@@ -1,0 +1,43 @@
+---
+import ProjectGallery from './project.galery';
+
+interface Props {
+    name: string;
+    brand: string;
+    role: string;
+    feactures: string[];
+    problem: string;
+    solution: string;
+    screenshots: Array<{ img: string, alt: string }>;
+}
+---
+<article class="py-6 ">
+    <header class="rounded-lg max-w-4xl mx-auto">
+        <div>
+            <h3 class="text-xl font-bold">{Astro.props.name} ({Astro.props.brand})</h3>
+            <p class="text-purple-600">{Astro.props.role}</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="border rounded-lg p-4">
+                <h4 class="text-lg font-semibold mb-1">Problem</h4>
+                <p class="text-gray-700">{Astro.props.problem}</p>
+            </div>
+            <div class="border rounded-lg p-4">
+                <h4 class="text-lg font-semibold mb-1">Solution</h4>
+                <p class="text-gray-700">{Astro.props.solution}</p>
+            </div>
+        </div>
+        <div class="border rounded-lg p-4 mt-4">
+            <h4 class="text-lg font-semibold mb-1">Features</h4>
+            <div class="px-6">
+                <ul class="list-disc ">
+                    {Astro.props.feactures.map((feature) => <li>{feature}</li>)}
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto mt-4">
+        <ProjectGallery screenshots={Astro.props.screenshots} client:load />
+    </main>
+
+</article>
