@@ -21,6 +21,7 @@ const title = Astro.props.title ? `${Astro.props.title} | Fernando Ticona` : "Fe
     <meta name="description" content={Astro.props.description ?? ""}>
 
     <link rel="canonical" href={`https://fvcoder.com${Astro.url.pathname}`} />
+    <link rel="preload" as="image" href="https://github.com/fvcoder.png">
 
     <meta property="og:site_name" content="Fernando Ticona">
     <meta property="og:type" content="website">
@@ -28,6 +29,21 @@ const title = Astro.props.title ? `${Astro.props.title} | Fernando Ticona` : "Fe
     <meta property="og:description" content={Astro.props.description ?? ""}>
 
     <meta name="theme-color" content="#FFFFFF">
+
+    <meta name="creator" content="Fernando Ticona (@fvcoder)">
+    <meta name="apple-mobile-web-app-title" content="fvcoder">
+    <meta name="application-name" content="fvcoder">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="https://cdn.fvcoder.com/icon/2024-04/browserconfig.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@fvcoder1">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={Astro.props.description ?? ""}>
+    <link rel="apple-touch-icon" href="https://cdn.fvcoder.com/icon/2024-04/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="https://cdn.fvcoder.com/icon/2024-04/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://cdn.fvcoder.com/icon/2024-04/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="mask-icon" href="https://cdn.fvcoder.com/icon/2024-04/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://cdn.fvcoder.com/icon/2024-04/favicon.ico">
 </head>
 <body class="relative selection:bg-purple-300 selection:text-white">
     <div class="relative">
