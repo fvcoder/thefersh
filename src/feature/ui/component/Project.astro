@@ -5,13 +5,18 @@ interface Props {
     name: string;
     brand: string;
     role: string;
-    feactures: string[];
+    features: string[];
     problem: string;
     solution: string;
-    screenshots: Array<{ img: string, alt: string }>;
+    screenshots: Array<{
+        img: string,
+        alt: string
+        w?: number,
+        h?: number
+    }>;
 }
 ---
-<article class="py-6 ">
+<article class="py-6 pb-10">
     <header class="rounded-lg max-w-4xl mx-auto">
         <div>
             <h3 class="text-xl font-bold">{Astro.props.name} ({Astro.props.brand})</h3>
@@ -31,13 +36,15 @@ interface Props {
             <h4 class="text-lg font-semibold mb-1">Features</h4>
             <div class="px-6">
                 <ul class="list-disc ">
-                    {Astro.props.feactures.map((feature) => <li>{feature}</li>)}
+                    {Astro.props.features.map((feature) => <li>{feature}</li>)}
                 </ul>
             </div>
         </div>
     </header>
-    <main class="max-w-7xl mx-auto mt-4">
-        <ProjectGallery screenshots={Astro.props.screenshots} client:load />
-    </main>
+    {Astro.props.screenshots && (
+        <main class="max-w-7xl mx-auto mt-4">
+            <ProjectGallery screenshots={Astro.props.screenshots} client:load />
+        </main>
+    )}
 
 </article>

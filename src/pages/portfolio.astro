@@ -4,36 +4,104 @@ import Brands from "../feature/ui/component/Brands.astro";
 import Layout from "./../feature/layout/page/Base.astro";
 import Project from "../feature/ui/component/Project.astro";
 
-
 const projects = [
     {
-        name: "Panel de control",
+        name: "Support and Maintenance",
+        brand: "Save the Children",
+        role: "WordPress Developer",
+        features: [
+            "Plugin Updates",
+            "WordPress Maintenance",
+            "Landing Page Creation",
+            "Bug Fixes in Plugins",
+            "Security Flaws Fixing",
+            "Design Flaws (UI) Fixing",
+            "Recommendations/Suggestions to Improve WordPress Security",
+            "Consulting"
+        ],
+        problem: "Save the Children's LMS needs to add training courses. During the process, unexpected behaviors and security flaws were found.",
+        solution: "Improve WordPress security, maintain plugins, create landing pages, fix bugs, and provide recommendations to enhance WordPress security.",
+        screenshots: [
+            { img: "https://cdn.fvcoder.com/w/st-1.webp", alt: "Save the Children screenshot 1", w: 1917, h: 908 },
+            { img: "https://cdn.fvcoder.com/w/st-2.webp", alt: "Save the Children screenshot 2", w: 1919, h: 909 },
+            { img: "https://cdn.fvcoder.com/w/st-3.webp", alt: "Save the Children screenshot 3", w: 1919, h: 905 },
+        ],
+    },
+    {
+        name: "Control Panel",
         brand: "Trujillo",
         role: "Front-end Developer",
-        feactures: [
-            "Actualizacion de datos en tiempo real",
-            "Mapa interactivo",
-            "Visualizacion de datos Rapida",
-            "Informacion de horarios laborales por colores",
-            "Detalles de responsabilidades de cada usuario",
-            "Detalles de sucursales",
-            "Busqueda Rapida de usuarios",
-            "Filtro de Busqueda por regiones y roles"
+        features: [
+            "Real-time Data Updates",
+            "Interactive Map",
+            "Fast Data Visualization",
+            "Color-coded Work Schedules",
+            "User Responsibility Details",
+            "Branch Details",
+            "Fast User Search",
+            "Search Filter by Regions and Roles",
         ],
-        problem: "Encontrar los vigilantes y supervisores de la empresa de manera visual, identificando la ubicacion actual, el control de horarios laborales y en tiempo real.",
-        solution: "Un mapa interactivo que permite a los usuarios localizar a los vigilantes y supervisores de la empresa, así como el control de horarios laborales por colores y facilitando la comunicacion.",
+        problem: "Find security guards and supervisors visually, identify their current location, and track work schedules in real time.",
+        solution: "An interactive map that allows users to locate security guards and supervisors, control work schedules using colors, and facilitate communication.",
         screenshots: [
-            { img: "https://cdn.fvcoder.com/w/trujillo-dash-1.webp", alt: "Captura de pantalla del panel de control de Trujillo 1" },
-            { img: "https://cdn.fvcoder.com/w/trujillo-dash-2.webp", alt: "Captura de pantalla del panel de control de Trujillo 2" },
-            { img: "https://cdn.fvcoder.com/w/trujillo-dash-3.webp", alt: "Captura de pantalla del panel de control de Trujillo 3" },
-            { img: "https://cdn.fvcoder.com/w/trujillo-dash-4.webp", alt: "Captura de pantalla del panel de control de Trujillo 4" },
-            { img: "https://cdn.fvcoder.com/w/trujillo-dash-5.webp", alt: "Captura de pantalla del panel de control de Trujillo 5" },
-            { img: "https://cdn.fvcoder.com/w/trujillo-dash-6.webp", alt: "Captura de pantalla del panel de control de Trujillo 6" },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-1.webp", alt: "Trujillo control panel screenshot 1", w: 1919, h: 911 },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-2.webp", alt: "Trujillo control panel screenshot 2", w: 1919, h: 905 },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-3.webp", alt: "Trujillo control panel screenshot 3", w: 1919, h: 912 },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-4.webp", alt: "Trujillo control panel screenshot 4", w: 1919, h: 909 },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-5.webp", alt: "Trujillo control panel screenshot 5", w: 1919, h: 915 },
+            { img: "https://cdn.fvcoder.com/w/trujillo-dash-6.webp", alt: "Trujillo control panel screenshot 6", w: 1919, h: 910 },
+        ],
+    },
+    {
+        name: "E-commerce",
+        brand: "Tools Smarter",
+        role: "Backend Developer & Front-end Developer",
+        features: [
+            "Multi-store",
+            "Cupon Management",
+            "Order Management",
+            "Customer Management",
+            "Product Management",
+            "Inventory Management",
+            "Shipping Management",
+            "Payment Management",
+            "Tax Management",
+            "Analytics",
+            "Api Integration",
+        ],
+        problem: "The client wants to create a solution similar to Facebook marketplace and Mercado Libre, hosting multiple sellers of different products (physical/digital).",
+        solution: "After a negotiation, I am in charge of creating the backend and the control panel to manage the products/customers/promotions, leaving an API for integration with other services.",
+        screenshots: [
+            { img: "https://cdn.fvcoder.com/w/a1.webp", alt: "Save the Children screenshot 1", w: 1920, h: 1016 },
+            { img: "https://cdn.fvcoder.com/w/a2.webp", alt: "Save the Children screenshot 2", w: 3840, h: 2488 },
+            { img: "https://cdn.fvcoder.com/w/a3.webp", alt: "Save the Children screenshot 3", w: 1920, h: 1016 },
+        ],
+    },
+    {
+        name: "Landing Page",
+        brand: "Xiara Studios",
+        role: "Front-end Developer & WordPress Developer",
+        features: [
+            "Landing Page Creation",
+            "Custom WordPress Plugin Development",
+            "Mini Game Development",
+            "Optimization",
+        ],
+        problem: "Needs a WordPress update for the page's design and functionality.",
+        solution: "A landing page with a Pixel Art video game theme was designed. The page was optimized for accessibility, and the code was optimized to work on all devices.",
+        screenshots: [
+            { img: "https://cdn.fvcoder.com/w/xia-lp-1.webp", alt: "Xiara Studios landing page screenshot 1", w: 1919, h: 908 },
+            { img: "https://cdn.fvcoder.com/w/xia-lp-2.webp", alt: "Xiara Studios landing page screenshot 2", w: 1919, h: 909 },
+            { img: "https://cdn.fvcoder.com/w/xia-lp-3.webp", alt: "Xiara Studios landing page screenshot 3", w: 1919, h: 912 },
         ],
     }
 ]
 ---
-<Layout>
+<Layout
+    lang="en"
+    title="Portfolio de Fernando Ticona | fvcoder"
+    description="Portfolio de Fernando Ticona. Aqui podras ver los proyecto en lo que estubo envolucrado, problematicas y soluciones."
+>
     <header class="relative">
         <div class="hidden md:block absolute inset-x-12 inset-y-0 -z-10 bg-[linear-gradient(to_right,#9AA3B02e_1px,transparent_1px),linear-gradient(to_bottom,#9AA3B02e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
         <div class="max-w-4xl mx-auto px-6 relative py-5 md:pt-32">
