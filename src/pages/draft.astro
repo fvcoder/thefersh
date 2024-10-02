@@ -1,6 +1,23 @@
 ---
 import Layout from "../feature/layout/page/Base.astro";
 import BlogTimelineItem from "../feature/ui/component/BlogTimelineItem.astro";
+import { Client } from "@notionhq/client";
+
+const notion = new Client({
+  auth: Astro.locals.runtime.env.NOTION_API_KEY,
+})
+
+const data = await notion.databases.query({
+    database_id: Astro.locals.runtime.env.NOTION_PAGE_ID,
+    page_size: 12,
+    sorts: [
+      {
+        property: 'Última edición',
+        direction: 'descending',
+      },
+    ],
+});
+
 ---
 <Layout
     lang="es"
@@ -13,16 +30,7 @@ import BlogTimelineItem from "../feature/ui/component/BlogTimelineItem.astro";
             <p>Llamalo como quieras, para mi es un basurero mental, jeje.</p>
         </header>
         <main class="mt-10">
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
-            <BlogTimelineItem />
+            {data.results.map((x: any) => <BlogTimelineItem time={x.last_edited_time} title={x.properties.Nombre.title.map((y: any) => y.plain_text).join("")} description="" href={`/draft/${x.id}`} />)}
         </main>
     </div>
 </Layout>
