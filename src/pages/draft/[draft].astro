@@ -1,9 +1,7 @@
 ---
-import { ActionError } from "astro:actions";
 import Layout from "../../feature/layout/page/Base.astro";
 import { Client } from "@notionhq/client";
 import { RenderNotion } from "../../feature/notion/component/renderNotion";
-import { R } from "../../../dist/_astro/index.I3bF3y5c";
 
     const notion = new Client({
     auth: Astro.locals.runtime.env.NOTION_API_KEY,
