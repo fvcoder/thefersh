@@ -19,7 +19,7 @@ export function NavbarMenu() {
                     <nav className='mt-6'>
                         <ul className="flex flex-col items-center gap-y-6">
                             <li className="ml-1">
-                                <DropToDown label="Work" items={[{ label: "Portfolio", href: "/portfolio"}, { label: "Experiments", href: "/experiments"}]} disableSm />
+                                <DropToDown label="Work" items={[{ label: "Portfolio", href: "/portfolio"}, { label: "Experiments", href: "/drafts"}]} disableSm />
                             </li>
                             <li>
                                 <a href="/blog" className="transition-colors px-2 text-gray-500 hover:text-gray-900 active:text-purple-500">Blog</a>
