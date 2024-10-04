@@ -36,10 +36,14 @@ import { Icon } from '@iconify-icon/react'
 	<section class="max-w-4xl mx-auto px-6">
 		<TitleSection href="/blog" title="Blog" />
 		<div class="mt-6">
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
+			{Array.from({ length: 4 }).map((_, i) =>
+				<BlogTimelineItem
+					time={new Date().toISOString()}
+					title="Lorem ipsum"
+					description="lorem ipsum"
+					href={`/blog/id-${i}`}
+				/>
+			)}
 		</div>
 	</section>
 	<section class="max-w-4xl mx-auto px-6 mt-12 md:mt-24 pb-10">

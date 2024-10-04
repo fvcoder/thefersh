@@ -68,14 +68,14 @@ import Layout from "./../../feature/layout/page/Base.astro";
     </div>
     <main class="w-full max-w-4xl mx-auto px-6 pb-20">
         <section>
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
-			<BlogTimelineItem />
+            {Array.from({ length: 8 }).map((_, i) =>
+				<BlogTimelineItem
+					time={new Date().toISOString()}
+					title="Lorem ipsum"
+					description="lorem ipsum"
+					href={`/blog/id-${i}`}
+				/>
+			)}
         </section>
     </main>
 </Layout>
