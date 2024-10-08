@@ -266,26 +266,12 @@ export function RenderNotion(props: RenderData) {
   }
 
   if (props.data.type === 'table') {
-    // console.log(props.data);
     const columns = Array.from({ length: props.data.table.table_width }).map(
       (_, i) => ({ key: String(i) }),
     );
 
-    const rows = props.data.tableChildren.map((y: any) => {
-      const newData: Record<string, any> = {
-        id: y.id,
-      };
-
-      y.table_row.cells.forEach((x: any, index: number) => {
-        newData.key = String(index);
-        newData[`cell_${index}`] = x[0] ?? {};
-      });
-
-      return newData;
-    });
-
     return (
-      <div className="not-prose">
+      <div>
         <table aria-label="Table">
           <thead>
             {columns.map((column) => (
@@ -298,13 +284,22 @@ export function RenderNotion(props: RenderData) {
               </th>
             ))}
           </thead>
-          <tbody >
-            {(rows ?? []).map((item: any) => {
+          <tbody>
+            {props.data.tableChildren.map((x: any, ip: number) => {
+              if (ip === 0) {
+                return null;
+              }
               return (
-                <td key={item.id}>
-                  ss
-                </td>
-              );
+                <tr key={x.id}>
+                  {x.table_row.cells.map((y: any, i: number) => {
+                    return y[0] && (
+                      <td key={`${x.id}-${i}`}>
+                        <RenderNotion data={y[0]} />
+                      </td>
+                    )
+                  })}
+                </tr>
+              )
             })}
           </tbody>
         </table>
