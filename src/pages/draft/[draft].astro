@@ -34,12 +34,12 @@ import { RenderNotion } from "../../feature/notion/component/renderNotion";
         block.results.map(async (x: any) => {
         if (x.type === 'table' && x.has_children) {
             const tableBlock = await notion.blocks.children.list({
-            block_id: x.id,
+                block_id: x.id,
             });
 
             return {
-            ...x,
-            tableChildren: tableBlock.results,
+                ...x,
+                tableChildren: tableBlock.results,
             };
         }
 
@@ -60,8 +60,8 @@ import { RenderNotion } from "../../feature/notion/component/renderNotion";
 
     const publicProperties = Object.keys(properties as Record<string, any>).map(
         (key) => ({
-        name: key,
-        value: properties[key],
+            name: key,
+            value: properties[key],
         }),
     );
 ---
@@ -95,7 +95,7 @@ import { RenderNotion } from "../../feature/notion/component/renderNotion";
             </div>
 
         </header>
-        <main class="mt-10 prose max-w-max prose-img:rounded-lg">
+        <main class="mt-10 prose max-w-max prose-img:rounded-lg prose-img:border prose-pre:p-0">
             {body.map((bl) => <RenderNotion data={bl} />)}
         </main>
     </div>
